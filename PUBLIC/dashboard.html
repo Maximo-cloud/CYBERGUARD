@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYBERGUARD</title>
+
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div id="scanOverlay"></div>
+
+<div class="layout">
+
+<aside class="sidebar">
+
+<div class="logo" onclick="mostrar('inicio')">
+<i class="fa-solid fa-shield-halved"></i>
+<span>CYBERGUARD</span>
+</div>
+
+<nav>
+
+<a href="#" id="btn-inicio" onclick="mostrar('inicio')">
+<i class="fa-solid fa-chart-line"></i>
+Dashboard
+</a>
+
+<a href="#" id="btn-perfil" onclick="mostrar('perfil')">
+<i class="fa-solid fa-user"></i>
+Perfil
+</a>
+
+<a href="#" id="btn-escaneo" onclick="mostrar('escaneo')">
+<i class="fa-solid fa-shield-virus"></i>
+Escaneo
+</a>
+
+<a href="#" id="btn-academia" onclick="mostrar('academia')">
+<i class="fa-solid fa-book"></i>
+Academia
+</a>
+
+<a href="#" id="btn-chatbot" onclick="mostrar('chatbot')">
+<i class="fa-solid fa-robot"></i>
+Chatbot
+</a>
+
+<a href="/logout">
+<i class="fa-solid fa-right-from-bracket"></i>
+Salir
+</a>
+
+</nav>
+
+</aside>
+
+<main class="main">
+
+<div id="contenido"></div>
+
+</main>
+
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>

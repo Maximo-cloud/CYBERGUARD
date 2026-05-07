@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYBERGUARD | Iniciar sesión</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="auth-page">
+
+<div class="auth-box">
+
+<h1><i class="fa-solid fa-shield-halved"></i> CYBERGUARD</h1>
+<p>Protección inteligente contra ciberacoso</p>
+
+<form action="/login" method="POST">
+
+<input type="email" name="correo" placeholder="Correo electrónico" required>
+
+<input type="password" name="password" placeholder="Contraseña" required>
+
+<button type="submit">Ingresar</button>
+
+</form>
+
+<div class="error-box">
+<script>
+const params = new URLSearchParams(window.location.search);
+const error = params.get("error");
+
+if(error==="correo"){
+document.write("El correo no existe.");
+}
+
+if(error==="password"){
+document.write("La contraseña es incorrecta.");
+}
+</script>
+</div>
+
+<a href="/register.html">Crear cuenta nueva</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
